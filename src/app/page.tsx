@@ -78,7 +78,7 @@ export default function HomePage() {
         />
         <StatsCard
           title="DAO Proposals"
-          value={stats?.totalProposals || '0'}
+          value={String(stats?.totalProposals || 0)}
           icon={Shield}
           color="text-purple-600"
           bgColor="bg-purple-100"
